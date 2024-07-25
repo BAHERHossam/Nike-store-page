@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.zoom = '125%';
+});
+
 const models = [
     "./assets/1.glb",
     "./assets/2.glb",
