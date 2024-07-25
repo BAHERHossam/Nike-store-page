@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.body.style.zoom = '125%';
+    document.body.style.zoom = `125%`;
 });
 
 const models = [
