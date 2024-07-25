@@ -1,0 +1,218 @@
+@import "vars";
+
+// *{
+//     overflow: hidden;
+// }
+
+html {
+    overflow: hidden;
+}
+
+#m1 {
+    visibility: visible;
+    left: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 85%;
+}
+
+.bgCircle {
+    width: 100%;
+    height: 100%;
+    // background: -webkit-radial-gradient(circle, #ffd677 0%, rgba(255,255,255,0) 35%);
+    background: -webkit-radial-gradient(circle, #3b556b 0%, rgba(255, 255, 255, 0) 35%);
+    position: absolute;
+    top: -6vh;
+    right: -21vw;
+    z-index: -1;
+    border: solid 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+
+    a {
+        text-decoration: none;
+        padding: 15px;
+        color: black;
+        background-color: #fffcf5;
+
+        &:hover {
+            background-color: transparent;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+    }
+
+    .navColor {
+        z-index: -1;
+        left: 37.55%;
+        position: absolute;
+        background: linear-gradient(to right, #f7947c, #a0beeb);
+        width: 250px;
+        height: 50px;
+    }
+
+    ul {
+        .men {
+            padding-left: 35px;
+        }
+        .kids {
+            padding-right: 40px;
+        }
+        list-style: none;
+        display: flex;
+    }
+
+    i {
+        cursor: pointer;
+        width: 50px;
+        text-align: center;
+
+        &:hover {
+            font-size: 19px;
+        }
+    }
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        max-width: 50%;
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: $text-color;
+            padding: 20px 0;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: $subText-color;
+            padding: 0 0 20px 0;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .btn {
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            background-color: $Secondry-color;
+
+            &:hover {
+                background-color: $btn-color;
+            }
+        }
+
+        .price {
+            color: $text-color;
+            position: absolute;
+            font-family: "Chakra Petch", sans-serif;
+            font-weight: 600;
+            font-style: italic;;
+            font-weight: 600;
+            font-style: italic;
+            display: inline;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 25px;
+            margin-top: -9px;
+        }
+    }
+
+    img {
+        width: 500px;
+        height: 500px;
+    }
+
+    model-viewer {
+        display: inline-block;
+        left: 700px;
+        width: 50%;
+        height: 50vh;
+        transition: 0.5s;
+    }
+
+    .imgs {
+        position: relative;
+
+        .models {
+            position: absolute;
+            top: 10rem;
+            right: 4rem;
+            display: flex;
+
+            %s {
+                display: block;
+                width: 60px;
+                height: 10px;
+                border-radius: 5px;
+                margin: 2px;
+            }
+
+            .btn1 {
+                border: none;
+                cursor: pointer;
+                height: 12px;
+                background-color: transparent;
+            }
+
+            .s-1 {
+                @extend %s;
+                background-color: $white-color;
+
+                &:hover {
+                    height: 11px;
+                    background-color: $switch-color;
+                }
+            }
+
+            .s-2 {
+                @extend %s;
+                background-color: $white-color;
+
+                &:hover {
+                    height: 11px;
+                    background-color: $switch-color;
+                }
+            }
+
+            .s-3 {
+                @extend %s;
+                background-color: $white-color;
+
+                &:hover {
+                    height: 11px;
+                    background-color: $switch-color;
+                }
+            }
+        }
+    }
+}
+
+#m2,
+#m3,
+#m4,
+#m5,
+#m6 {
+    width: 0px;
+}
+
+#btn1 {
+    background-color: #d17e65;
+}
