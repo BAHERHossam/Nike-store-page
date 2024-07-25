@@ -1,10 +1,10 @@
 const models = [
-    "/assets/1.glb",
-    "/assets/2.glb",
-    "/assets/3.glb",
-    "/assets/4.glb",
-    "/assets/5.glb",
-    "/assets/6.glb"
+    "./assets/1.glb",
+    "./assets/2.glb",
+    "./assets/3.glb",
+    "./assets/4.glb",
+    "./assets/5.glb",
+    "./assets/6.glb"
 ];
 
 function changeModel(modelNumber) {
@@ -37,7 +37,6 @@ function changeModel(modelNumber) {
             document.getElementById(`price`).innerHTML = `299.99 $`
             document.getElementById(`description`).innerHTML = `The Nike SB Dunk High Pro QS 'Hawaii Maui Wowie'embodies tropical flair withits vibrant floral print and hidden stash pocket.Designed for skaters, itfeatures a durable canvas upper, padded collar, andZoom Air cushioning foroptimal support and comfort. A standout choice forboth skating and streetstyle.`
             document.getElementById(`btn`).style.backgroundColor = "#D17E65"
-            // document.getElementById(`nav buttons`).style.
             document.getElementById(`btn1`).style.backgroundColor = "#D17E65"
             document.getElementById(`btn1`).style.backgroundColor = "#D17E65"
 
