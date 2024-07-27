@@ -1,0 +1,253 @@
+@import "vars";
+
+html {
+    overflow: hidden;
+}
+
+#m1 {
+    visibility: visible;
+    left: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 85%;
+}
+
+
+.nikeBg {
+    z-index: -9;
+    position: absolute;
+    left: 8rem;
+    top: -1rem;
+    color: rgba(0, 0, 0, 0.03);
+    font-family: Poppins;
+    font-size: 33rem;
+    font-weight: 800;
+}
+
+.bgCircle {
+    width: 20%;
+    height: 40%;
+    background: #3b556b;
+    position: absolute;
+    top: 27vh;
+    right: 18vw;
+    z-index: -11;
+    border-radius: 50%;
+}
+
+.smlCircle {
+    width: 35%;
+    height: 25%;
+    background: #D17E6565;
+    position: absolute;
+    top: 60vh;
+    right: 50vw;
+    rotate: -20deg;
+    z-index: -11;
+    border-radius: 50%;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    right: 0vw;
+    position: absolute;
+    z-index: -10;
+    background-color: #f7957c00;
+    -webkit-backdrop-filter: blur(50%);
+    backdrop-filter: blur(5rem);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+
+    a {
+        text-decoration: none;
+        padding: 15px;
+        color: black;
+        background-color: #fffcf5;
+
+        &:hover {
+            background-color: transparent;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+    }
+
+    .navColor {
+        z-index: -1;
+        left: 40%;
+        position: absolute;
+        background: linear-gradient(to right, #f7947c, #a0beeb);
+        width: 250px;
+        height: 50px;
+    }
+
+    ul {
+        .men {
+            padding-left: 35px;
+        }
+        .kids {
+            padding-right: 40px;
+        }
+        list-style: none;
+        display: flex;
+    }
+
+    i {
+        cursor: pointer;
+        width: 50px;
+        text-align: center;
+
+        &:hover {
+            font-size: 20px;
+            transition: 0.3s;
+        }
+    }
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        max-width: 50%;
+
+        h1 {
+            font-size: 70px;
+            font-weight: bold;
+            color: $text-color;
+            padding: 90px 0 20px;
+        }
+
+        h2 {
+            font-size: 45px;
+            color: #D17E65;
+            padding: 0 0 20px 0;
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 1.5;
+            padding-bottom: 40px;
+        }
+
+        .btn {
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            background-color: #D17E65;
+
+            &:hover {
+                background-color: $btn-color;
+            }
+        }
+
+        .price {
+            color: $text-color;
+            position: absolute;
+            font-family: "Chakra Petch", sans-serif;
+            font-weight: 600;
+            font-style: italic;
+            font-weight: 600;
+            font-style: italic;
+            display: inline;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 25px;
+            margin-top: -9px;
+        }
+    }
+
+    img {
+        width: 500px;
+        height: 500px;
+    }
+
+    model-viewer {
+        display: inline-block;
+        left: 700px;
+        width: 50%;
+        height: 50vh;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    .imgs {
+        position: relative;
+
+        .models {
+            position: absolute;
+            top: 14rem;
+            right: 8rem;
+            display: flex;
+
+            %s {
+                display: block;
+                width: 60px;
+                height: 10px;
+                border-radius: 5px;
+                margin: 2px;
+            }
+
+            .btn1 {
+                border: none;
+                cursor: pointer;
+                height: 12px;
+                background-color: transparent;
+            }
+
+            .s-1 {
+                @extend %s;
+                background-color: $white-color;
+
+                &:hover {
+                    height: 11px;
+                    background-color: $switch-color;
+                }
+            }
+
+            .s-2 {
+                @extend %s;
+                background-color: $white-color;
+
+                &:hover {
+                    height: 11px;
+                    background-color: $switch-color;
+                }
+            }
+
+            .s-3 {
+                @extend %s;
+                background-color: $white-color;
+
+                &:hover {
+                    height: 11px;
+                    background-color: $switch-color;
+                }
+            }
+        }
+    }
+}
+
+#m2,
+#m3,
+#m4,
+#m5,
+#m6 {
+    width: 0px;
+}
+
+#btn1 {
+    background-color: #d17e65;
+}
